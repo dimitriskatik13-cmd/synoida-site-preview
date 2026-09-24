@@ -1,0 +1,295 @@
+/* Local visual trial. Original photograph/logo files are unchanged. */
+:root{--lab-ink:#303133;--lab-body:#58595B;--lab-paper:#fff;--lab-soft:#F5F5F5;--lab-line:#58595b2b;--lab-width:1184px;--lab-gutter:32px;--lab-space:72px;--lab-gap:56px;--lab-h2:clamp(28px,2.6vw,34px);--lab-radius:28px}
+body.lab-preview{color:var(--lab-body)}
+body.lab-preview>header{background:#fff!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom:1px solid #58595b1a;box-shadow:0 3px 15px -13px #30313350}
+body.lab-preview>header>div{max-width:var(--lab-width);padding-inline:var(--lab-gutter)}
+body.lab-preview>header>div>div{height:72px}
+body.lab-preview>header img{height:44px;width:auto}
+body.lab-preview header nav>ul{gap:24px}
+body.lab-preview header a[data-nav="contact"]{color:var(--lab-ink)!important;min-height:44px;box-shadow:none}
+body.lab-preview header nav a:hover{color:var(--lab-ink)}
+body.lab-preview .nav-link::after{width:100%;transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+body.lab-preview .nav-link:hover::after,body.lab-preview .nav-link.nav-active::after{transform:scaleX(1)}
+body.lab-preview #therapiesDropdown ul{width:300px;border-radius:16px;max-height:70vh;overflow:auto}
+body.lab-preview #therapiesDropdown a{min-height:44px;display:flex;align-items:center;font-size:15px;font-weight:500!important;line-height:1.5}
+body.lab-preview #therapiesDropdown a:hover{background:#f5f5f5;color:#303133!important}
+body.lab-preview #mobileMenu{max-height:calc(100dvh - 64px);overflow:auto;overscroll-behavior:contain}
+body.lab-preview #mobileMenu a,body.lab-preview #mobileMenu button{min-height:44px}
+.lab-container{max-width:var(--lab-width);padding-inline:var(--lab-gutter);margin:auto}
+.lab-utility{background:#f5f5f5;border-bottom:1px solid #58595b12;font:13px/1.6 Inter,system-ui,sans-serif}
+.lab-utility>.lab-container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.lab-utility nav{display:flex;gap:25px;align-items:center}
+.lab-utility a{display:inline-flex;align-items:center;min-height:36px;color:#58595B}
+.lab-utility nav a::before{content:"";width:5px;height:5px;background:#8DC63F;border-radius:50%;margin-right:9px}
+.lab-utility a:hover{text-decoration:underline;text-underline-offset:4px}
+.lab-utility .lab-choose-centre{display:none}
+.lab-status{padding:14px 24px;text-align:center;font:13px/1.8 Inter,system-ui,sans-serif;background:#f5f5f5;border-top:1px solid var(--lab-line)}
+.lab-status a{padding:8px 3px;text-decoration:underline;text-underline-offset:3px;display:inline-block}
+body.lab-preview .lab-skip:focus{position:fixed!important;left:20px;top:12px;z-index:1000;width:auto!important;height:auto!important;clip:auto!important;clip-path:none!important;padding:12px 18px;background:#fff;color:#303133;border-radius:8px;white-space:normal}
+body.lab-preview :is(a,button,summary):focus-visible{outline:3px solid #303133!important;outline-offset:4px!important;box-shadow:0 0 0 4px #fff!important}
+body.lab-preview .prose-syn p{text-align:left}
+/* One scale for comparable elements; page composition retains its identity. */
+body.lab-preview :is(.preview-container,.about-wrap,.assessment-wrap,.contact-wrap,.therapies-wrap,.speech-wrap,.specialty-wrap){max-width:var(--lab-width);padding-inline:var(--lab-gutter)}
+body.lab-preview main>.home-about>.max-w-6xl,body.lab-preview .home-values-wrap,body.lab-preview .home-services .max-w-6xl{max-width:var(--lab-width);padding-inline:var(--lab-gutter)}
+body.lab-preview main h2{font-size:var(--lab-h2)!important;font-weight:600!important;line-height:1.4!important;letter-spacing:-.03em}
+body.lab-preview main h3{font-size:20px;line-height:1.45;font-weight:600}
+body.lab-preview main p{line-height:1.8}
+body.lab-preview :is(.specialty-section,.speech-section,.assessment-section,.about-section,.therapies-section,.preview-section){padding-block:var(--lab-space)}
+body.lab-preview :is(.about-story-layout,.about-team-layout,.specialty-intro-layout,.specialty-focus-with-photo,.specialty-process-layout,.specialty-faq-layout,.speech-intro-layout,.speech-concerns-layout,.speech-practice-layout,.speech-question-layout,.assessment-split,.assessment-process-layout,.assessment-prepare-layout,.assessment-question-layout,.therapies-intro-layout,.therapies-help-layout){gap:var(--lab-gap)}
+body.lab-preview :is(.specialty-domains p,.specialty-process-list p,.speech-observations p,.speech-practice-points p,.therapy-copy p[id],.assessment-steps li p){font-size:15px;line-height:1.8}
+body.lab-preview :is(.specialty-breadcrumb,.speech-breadcrumb,.therapies-breadcrumb,.about-breadcrumb){font-size:13px;line-height:1.7;gap:10px}
+body.lab-preview :is(.specialty-text-link,.speech-text-link,.therapies-text-link,.about-text-link,.assessment-text-link,.therapy-read,.specialty-hero-link,.speech-hero-link,.therapies-light-link,.about-hero-link){font-size:14px;min-height:46px}
+body.lab-preview :is(.specialty-faq,.speech-faq,.assessment-faq) summary{font-size:16px;line-height:1.65;min-height:66px;padding-block:20px}
+body.lab-preview :is(.specialty-faq,.speech-faq,.assessment-faq) p{font-size:15px;line-height:1.8}
+body.lab-preview :is(.specialty-button,.speech-button,.assessment-button,.therapies-button,.preview-button){font-size:15px;min-height:50px;color:#303133;box-shadow:none}
+body.lab-preview .specialty-close h2{font-size:28px!important}
+body.lab-preview :is(.contact-close,.assessment-close,.about-close,.speech-close){padding-block:64px}
+/* Calm photo-led intros, with local scrims rather than darkening the whole room. */
+body.lab-preview main h1{font-size:clamp(36px,4.1vw,52px)!important;line-height:1.25!important;font-weight:600;letter-spacing:-.04em}
+body.lab-preview .specialty-hero-split h1{font-size:clamp(35px,3.55vw,46px)!important}
+body.lab-preview :is(.speech-hero,.therapies-hero,.about-hero,.specialty-hero)>div{min-height:430px}
+body.lab-preview .specialty-hero-split>div{min-height:450px}
+body.lab-preview :is(.speech-hero,.therapies-hero,.about-hero,.specialty-hero) .hero-scrim-b{background:linear-gradient(90deg,rgba(30,33,31,.83) 0%,rgba(30,33,31,.76) 43%,rgba(30,33,31,.25) 72%,rgba(30,33,31,.03) 100%)}
+body.lab-preview :is(.specialty-hero-copy,.speech-hero-content,.therapies-hero-content,.about-hero-content){padding-top:44px!important;padding-bottom:44px!important}
+body.lab-preview :is(.specialty-hero-copy>p,.speech-hero-copy,.therapies-hero-copy,.about-hero-copy){max-width:590px;line-height:1.75;font-size:17px}
+body.lab-preview .specialty-hero-split .specialty-hero-copy>p{max-width:46%}
+body.lab-preview .specialty-hero-split .specialty-breadcrumb{max-width:47%}
+body.lab-preview .home-hero>div{min-height:630px}
+body.lab-preview .home-hero .reveal{padding-top:48px!important;padding-bottom:62px!important}
+body.lab-preview .home-hero h1{max-width:640px!important}
+body.lab-preview .home-hero h1>span{color:#8DC63F;font-size:.83em;line-height:1.18;margin-top:4px}
+body.lab-preview .home-hero h1>span::after{content:none}
+body.lab-preview .home-hero .hero-scrim{background:linear-gradient(90deg,rgba(30,33,31,.85) 0%,rgba(30,33,31,.73) 43%,rgba(30,33,31,.12) 75%,transparent 100%)}
+body.lab-preview .home-hero .preview-hero-copy{max-width:570px;font-size:16px;line-height:1.8}
+body.lab-preview .home-hero a{font-size:15px;min-height:50px}
+body.lab-preview .home-values-wrap{margin-top:0;padding-bottom:64px;padding-top:38px}
+body.lab-preview .home-value{border-radius:20px;box-shadow:none;padding:24px;gap:16px}
+body.lab-preview .home-value:nth-child(-n+2){padding:26px}
+body.lab-preview .preview-value-copy h2{font:600 18px/1.5 Inter,system-ui,sans-serif!important;letter-spacing:0}
+body.lab-preview .home-value:nth-child(-n+2) img{width:66px;height:66px}
+body.lab-preview .home-about{padding-block:72px 92px}
+body.lab-preview .home-about>.max-w-6xl{gap:64px}
+body.lab-preview .home-about .frame{aspect-ratio:4/3;border-radius:28px;object-position:65% 50%}
+body.lab-preview .home-photo-detail{width:49%;bottom:-42px;right:0;transform:rotate(2deg);border-width:6px;border-radius:18px}
+body.lab-preview .home-question{padding-block:68px}
+body.lab-preview .home-question .preview-container{gap:56px;grid-template-columns:1fr 1.1fr}
+body.lab-preview .home-refined #preview-first-steps{padding-block:64px}
+body.lab-preview .preview-step-number{font-size:40px}
+body.lab-preview .home-refined .preview-steps li{padding-top:22px}
+body.lab-preview .logo-story{min-height:390px}
+body.lab-preview .logo-story-copy{padding-block:68px;width:53%;margin-left:max(32px,calc((100vw - 1184px)/2 + 32px))}
+body.lab-preview .logo-story .cta-mark{width:clamp(220px,26vw,320px)}
+/* Source-specific framing preserves the subjects in the actual room photographs. */
+body.lab-preview :is(.specialty-photo img,.speech-photo img,.assessment-photo img,.about-photo img){aspect-ratio:4/3;object-fit:cover}
+body.lab-preview :is(.depth-clip,.assessment-photo img){border-radius:4px 28px 4px 4px}
+body.lab-preview img[src$="occupational-detail.jpg"],body.lab-preview img[src$="occupational-fine.jpg"]{object-position:60% 50%}
+body.lab-preview img[src$="speech-room.jpg"],body.lab-preview img[src$="special-hero.jpg"]{object-position:48% 50%}
+body.lab-preview img[src$="special-detail.jpg"]{object-position:52% 58%}
+body.lab-preview img[src$="consulting-detail.jpg"]{object-position:55% 55%}
+body.lab-preview img[src$="social-detail.jpg"]{object-position:55% 58%}
+body.lab-preview img[src$="play-room.jpg"]{object-position:50% 58%;filter:brightness(1.04)}
+body.lab-preview img[src$="about-storefront.jpg"]{object-position:65% 50%}
+body.lab-preview img[src$="about-history.jpg"]{object-position:54% 47%}
+body.lab-preview img[src$="contact-hero.jpg"]{object-position:43% 50%}
+body.lab-preview .specialty-focus-with-photo{grid-template-columns:1.2fr .85fr;align-items:start}
+body.lab-preview .layout-learning .specialty-focus-with-photo{grid-template-columns:.85fr 1.2fr}
+body.lab-preview .specialty-focus-with-photo .specialty-photo{top:100px}
+body.lab-preview .specialty-domains>li{padding-block:22px}
+body.lab-preview .specialty-focus-with-photo .specialty-domains h3{margin-top:2px}
+body.lab-preview .specialty-process-layout:not(.layout-learning *){gap:56px}
+body.lab-preview .specialty-process-layout>h2{max-width:370px}
+body.lab-preview .layout-dialogue .specialty-process-layout{grid-template-columns:.72fr 1.28fr}
+body.lab-preview .specialty-process-list p{line-height:1.75}
+body.lab-preview .about-team-intro{gap:56px;grid-template-columns:1.1fr .9fr;margin-bottom:36px}
+body.lab-preview .about-manifesto-layout{gap:56px;grid-template-columns:.65fr 1.35fr}
+body.lab-preview .about-process-layout{gap:64px;grid-template-columns:.9fr 1.1fr}
+body.lab-preview .about-year{font-size:80px;line-height:1.1;margin-bottom:24px}
+body.lab-preview .about-timeline{margin-top:48px}
+body.lab-preview .assessment-process-photo{top:100px}
+body.lab-preview .assessment-steps li{padding-block:22px}
+body.lab-preview .therapies-directory-layout{grid-template-columns:216px minmax(0,1fr);gap:48px}
+body.lab-preview .therapy-entry-link{grid-template-columns:210px minmax(0,1fr);gap:28px;padding-block:28px;align-items:center}
+body.lab-preview .therapy-photo{aspect-ratio:4/3}
+body.lab-preview .therapy-copy h3{font-size:26px}
+body.lab-preview .therapy-intent{font-size:13px}
+body.lab-preview .therapy-topics{font-size:12px}
+body.lab-preview .therapies-guide a{font-size:14px}
+body.lab-preview .therapies-help h2{font-size:32px!important}
+/* Shared subtle edge motif, including earlier pages. */
+body.lab-preview :is(.contact-email-section,.assessment-prepare,.about-team){position:relative;isolation:isolate;overflow:hidden}
+body.lab-preview :is(.contact-email-section,.assessment-prepare,.about-team)::before{content:"";position:absolute;left:-220px;top:-58px;width:280px;height:280px;border:1px solid #ffffff24;border-radius:50%;box-shadow:0 0 0 44px #ffffff08,0 0 0 88px #ffffff06,0 0 0 132px #ffffff04;pointer-events:none;z-index:-1}
+/* Photographs settle sooner. The logo signature effect remains byte-identical. */
+body.lab-preview .focus-scroll{--f:clamp(0,calc(var(--p,1)/.2),1);opacity:calc(.78 + var(--f)*.22)}
+body.lab-preview .focus-scroll .depth-clip{filter:blur(calc((1 - var(--f))*2px));transform:scale(calc(1.025 - var(--f)*.025))}
+body.lab-preview .formal-scroll{--f:clamp(0,calc(var(--p,1)/.24),1)}
+body.lab-preview .formal-scroll .depth-box{opacity:calc(.82 + var(--f)*.18)}
+body.lab-preview .mosaic{aspect-ratio:4/3;border-radius:4px 28px 4px 4px;box-shadow:none}
+body.lab-preview .mosaic .tile{--fi:clamp(0,calc((var(--p,1) - var(--d,0)*.35)/.22),1);background-size:auto 200%;background-position:calc(7.895% + var(--x)*42.105%) calc(var(--y)*100%);transform:translate3d(calc((1 - var(--fi))*var(--dx)*.35),calc((1 - var(--fi))*var(--dy)*.35),0) scale(calc(.98 + var(--fi)*.026));opacity:calc(.7 + var(--fi)*.3)}
+body.lab-preview .mosaic .tile.chip::after{opacity:clamp(0,calc(.3 - var(--fi)),.3)}
+body.lab-preview .list-draw>li{opacity:1;transform:translate3d(calc((1 - var(--on,1))*-4px),0,0)}
+body.lab-preview .js .reveal{transition-duration:.42s}
+body.lab-preview .reveal{transition-duration:.42s}
+/* Native static route is also keyboard-safe when motion is reduced. */
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.js body.lab-preview .reveal,.js body.lab-preview .reveal.in{opacity:1!important;transform:none!important;transition:none!important}.lab-preview *,.lab-preview *::before,.lab-preview *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}.lab-preview :is(.hero-plane,.hero-planes,.hero-fg){transform:none!important}.lab-preview .svc-pin{height:auto!important}.lab-preview .svc-stage{position:relative!important;top:auto!important}.lab-preview .svc-rail{transform:none!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));padding:0 32px!important}.lab-preview .svc-rail>a{width:auto!important;min-width:0}.lab-preview .mosaic .tile{opacity:1!important;transform:scale(1.006)!important}}
+@media(max-width:1100px){body.lab-preview header nav>ul{gap:17px}.lab-preview header nav{font-size:14px}body.lab-preview header img{height:40px}:root{--lab-gap:40px}}
+@media(max-width:1023px){body.lab-preview .home-refined .svc-rail{display:grid;grid-template-columns:1fr 1fr;gap:22px;padding-inline:32px}.lab-preview .svc-card .svc-body{padding:26px 22px}.lab-preview .svc-card .svc-icon{display:none}body.lab-preview .specialty-focus-with-photo,body.lab-preview .layout-learning .specialty-focus-with-photo{gap:36px}.lab-preview .lab-utility nav{gap:17px}}
+@media(max-width:700px){
+:root{--lab-gutter:24px;--lab-space:48px;--lab-gap:30px;--lab-h2:27px}
+body.lab-preview>header>div>div{height:64px}body.lab-preview>header img{height:40px}
+.lab-utility nav{display:none}.lab-utility .lab-choose-centre{display:inline-flex}.lab-utility a{min-height:44px;font-size:13px}.lab-utility>.lab-container{gap:12px}
+body.lab-preview main h1,body.lab-preview .specialty-hero-split h1{font-size:clamp(30px,8.45vw,36px)!important;line-height:1.3!important}
+body.lab-preview :is(.speech-hero,.therapies-hero,.about-hero,.specialty-hero)>div{min-height:360px}
+body.lab-preview :is(.speech-hero,.therapies-hero,.about-hero,.specialty-hero) .hero-scrim-b{background:linear-gradient(90deg,rgba(30,33,31,.83),rgba(30,33,31,.6) 75%,rgba(30,33,31,.33))}
+body.lab-preview .specialty-hero-split .specialty-hero-copy>p{max-width:100%}
+body.lab-preview .specialty-hero-split .specialty-breadcrumb{max-width:100%}
+body.lab-preview :is(.specialty-breadcrumb,.speech-breadcrumb,.therapies-breadcrumb,.about-breadcrumb){font-size:12px;gap:8px;margin-bottom:24px}
+body.lab-preview :is(.specialty-hero-copy,.speech-hero-content,.therapies-hero-content,.about-hero-content){padding-top:34px!important;padding-bottom:34px!important}
+body.lab-preview :is(.specialty-hero-copy>p,.speech-hero-copy,.therapies-hero-copy,.about-hero-copy){font-size:16px;line-height:1.75}
+body.lab-preview main p{font-size:16px;line-height:1.75}
+body.lab-preview :is(.specialty-domains p,.specialty-process-list p,.speech-observations p,.speech-practice-points p,.therapy-copy p[id],.assessment-steps li p,.specialty-faq p,.speech-faq p,.assessment-faq p){font-size:15px;line-height:1.75}
+body.lab-preview :is(.specialty-intro-layout,.specialty-focus-with-photo,.layout-learning .specialty-focus-with-photo,.specialty-process-layout,.specialty-faq-layout,.speech-intro-layout,.speech-concerns-layout,.speech-practice-layout,.speech-question-layout,.assessment-split,.assessment-process-layout,.assessment-prepare-layout,.assessment-question-layout,.about-manifesto-layout,.about-team-intro,.about-story-layout,.about-team-layout,.about-process-layout,.therapies-intro-layout,.therapies-help-layout){grid-template-columns:1fr;gap:30px}
+body.lab-preview :is(.specialty-photo img,.speech-photo img,.assessment-photo img,.about-photo img){aspect-ratio:3/2}
+body.lab-preview .mosaic{aspect-ratio:4/3}
+body.lab-preview .specialty-photo{position:relative!important;top:auto!important}
+body.lab-preview .specialty-process-layout>h2{max-width:none}
+body.lab-preview .specialty-close>.specialty-wrap{display:block}
+body.lab-preview .specialty-close h2{font-size:26px!important}
+body.lab-preview .specialty-text-link,body.lab-preview .speech-text-link,body.lab-preview .therapies-text-link,body.lab-preview .about-text-link{font-size:14px}
+body.lab-preview .home-hero>div{min-height:620px}
+body.lab-preview .home-hero .reveal{padding-block:38px 44px!important}
+body.lab-preview .home-hero h1{font-size:33px!important;max-width:100%!important}
+body.lab-preview .home-hero h1>span{font-size:.88em;margin-top:4px}
+body.lab-preview .home-hero h1>span::after{margin-top:18px;width:52px}
+body.lab-preview .home-hero .hero-scrim{background:linear-gradient(90deg,rgba(30,33,31,.86),rgba(30,33,31,.69) 75%,rgba(30,33,31,.35))}
+body.lab-preview .home-hero .preview-hero-copy{font-size:16px;line-height:1.75;max-width:none}
+body.lab-preview .home-hero .mt-5{font-size:14px}
+body.lab-preview .home-hero .mt-8{gap:12px;margin-top:22px}
+body.lab-preview .home-hero a{font-size:14px;padding:12px 20px}
+body.lab-preview .home-values-wrap{padding:28px 24px 36px}
+body.lab-preview .home-values-grid{display:block}
+body.lab-preview .home-value,body.lab-preview .home-value:nth-child(-n+2){display:grid;grid-template-columns:42px minmax(0,1fr);gap:18px;padding:18px 0;background:transparent;border:0;border-bottom:1px solid #58595b20;border-radius:0}
+body.lab-preview .home-value img,body.lab-preview .home-value:nth-child(-n+2) img{width:42px;height:42px}
+body.lab-preview .preview-value-copy h2{font-size:16px!important;margin-bottom:5px}
+body.lab-preview .home-value .preview-value-copy p{font-size:14px;line-height:1.65}
+body.lab-preview .home-about{padding-block:48px 54px}
+body.lab-preview .home-about>.max-w-6xl{gap:38px}
+body.lab-preview .home-about>.max-w-6xl>.reveal:first-child{padding-right:0;margin-bottom:20px}
+body.lab-preview .home-about .frame{aspect-ratio:3/2}
+body.lab-preview .home-photo-detail{width:42%;bottom:-26px;right:8px;border-width:4px}
+body.lab-preview .home-about .preview-centre-count{margin-top:0;font-size:16px}
+body.lab-preview .home-about .preview-centre-count [data-count]{font-size:40px}
+body.lab-preview .home-question{padding-block:48px}
+body.lab-preview .home-question .preview-container{grid-template-columns:1fr;gap:14px}
+body.lab-preview .home-refined .svc-stage{padding-block:48px}
+body.lab-preview .home-refined .svc-intro{margin-bottom:24px}
+body.lab-preview .home-refined .svc-rail{display:block;padding-inline:24px}
+body.lab-preview .home-refined .svc-card{display:grid;grid-template-columns:104px minmax(0,1fr);gap:18px;align-items:start;padding:22px 0;margin:0;border:0;border-bottom:1px solid #58595b24;border-radius:0;box-shadow:none!important;background:#fff;transform:none!important}
+body.lab-preview .home-refined .svc-media{align-self:start;border-radius:6px;aspect-ratio:1/1;overflow:hidden;display:block}
+body.lab-preview .home-refined .svc-media img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border-radius:0}
+body.lab-preview .home-refined .svc-icon{display:none}
+body.lab-preview .home-refined .svc-body{padding:0;min-width:0}
+body.lab-preview .home-refined .svc-body h3{font-size:19px;margin-bottom:10px;line-height:1.45;overflow-wrap:anywhere}
+body.lab-preview .home-refined .svc-body>p{font-size:14px;line-height:1.7;margin-bottom:12px}
+body.lab-preview .home-refined .svc-body>span:last-child{padding-top:0;margin-top:0;min-height:44px;font-size:13px;line-height:1.55}
+body.lab-preview .logo-story{padding:44px 24px;min-height:0}
+body.lab-preview .logo-story .cta-mark{position:relative;width:200px;right:auto;top:auto;translate:none;margin:0 auto 24px}
+body.lab-preview .logo-story-copy{padding:0;margin:0;width:100%;text-align:left}
+body.lab-preview .home-refined #preview-first-steps{padding-block:48px}
+body.lab-preview .home-refined .preview-steps{gap:22px}
+body.lab-preview .home-refined .preview-steps li{padding-left:48px;min-height:0}
+body.lab-preview .home-refined .preview-step-number{top:22px;font-size:26px}
+body.lab-preview .home-refined .preview-centres-section{padding-block:48px}
+body.lab-preview :is(.home-refined .location-photos>.preview-centre,.contact-refined .location-photos>.contact-centre){grid-template-columns:116px minmax(0,1fr);grid-template-areas:"photo place" "photo address" "phone action";gap:8px 18px;padding-block:22px}
+body.lab-preview .location-photo{align-self:start;margin:0}
+body.lab-preview .location-photo img{aspect-ratio:4/3;border-radius:6px}
+body.lab-preview .location-photo figcaption{font-size:11px;line-height:1.45;margin-top:6px}
+body.lab-preview :is(.home-refined .preview-centre h3,.contact-refined .contact-centre h3){font-size:23px;line-height:1.35;gap:8px}
+body.lab-preview :is(.home-refined .preview-centre>p,.contact-refined .contact-centre>address){font-size:14px;line-height:1.6;margin:0}
+body.lab-preview :is(.home-refined .preview-centre>.preview-phone,.contact-refined .contact-centre>.contact-phone){font-size:18px;min-height:44px;justify-self:start}
+body.lab-preview :is(.home-refined .preview-centre>.preview-centre-link,.contact-refined .contact-centre>.contact-map){font-size:13px;line-height:1.5;max-width:none;gap:8px;justify-self:end}
+body.lab-preview :is(.preview-centre-link>span,.contact-map>span){width:34px;height:34px;flex-basis:34px;font-size:20px}
+body.lab-preview .location-photo-notice{font-size:12px!important;line-height:1.7}
+body.lab-preview .therapies-directory-layout{display:block}
+body.lab-preview .therapies-guide{margin-bottom:28px}
+body.lab-preview .therapies-guide ul{gap:0 18px}
+body.lab-preview .therapies-guide a{font-size:14px;padding-block:11px;min-height:44px}
+body.lab-preview .therapy-entry-link{grid-template-columns:1fr;gap:22px}
+body.lab-preview .therapy-photo{aspect-ratio:3/2}
+body.lab-preview .therapy-copy h3{font-size:25px}
+body.lab-preview .therapy-intent,body.lab-preview .therapy-topics{font-size:13px}
+body.lab-preview .therapy-read{font-size:14px}
+body.lab-preview :is(.contact-email-section,.assessment-prepare,.about-team){padding-block:48px}
+body.lab-preview footer>.max-w-6xl{padding-inline:24px}
+.lab-status{font-size:12px;padding:14px 24px}
+@media(prefers-reduced-motion:reduce){body.lab-preview .home-refined .svc-rail{display:block!important;padding-inline:24px!important}}
+}
+@media(max-width:360px){:root{--lab-gutter:20px}body.lab-preview .home-hero h1{font-size:30px!important}.lab-utility .lab-email{font-size:12px}body.lab-preview .home-refined .svc-card{grid-template-columns:88px minmax(0,1fr);gap:14px}body.lab-preview :is(.home-refined .location-photos>.preview-centre,.contact-refined .location-photos>.contact-centre){grid-template-columns:100px minmax(0,1fr);gap:8px 14px}body.lab-preview :is(.home-refined .preview-centre h3,.contact-refined .contact-centre h3){font-size:21px}body.lab-preview :is(.home-refined .preview-centre>.preview-phone,.contact-refined .contact-centre>.contact-phone){font-size:16px}}
+/* R2: align the entry point and keep colored emphasis readable. */
+body.lab-preview .home-hero>div>.reveal{max-width:var(--lab-width);padding-inline:var(--lab-gutter)!important}
+body.lab-preview main :is(h1,h2,h3) :is(.text-green,.text-blue,.text-orange,.text-red){color:inherit}
+body.lab-preview .home-hero h1>span{color:#8DC63F}
+body.lab-preview .location-photo figcaption{font-size:12px;line-height:1.5}
+@media(max-width:700px){
+body.lab-preview .home-refined .svc-card{grid-template-columns:116px minmax(0,1fr);grid-template-areas:"photo title" "description description" "action action";gap:14px 20px;align-items:center;padding-block:24px}
+body.lab-preview .home-refined .svc-media{grid-area:photo;aspect-ratio:4/3;width:100%;align-self:center}
+body.lab-preview .home-refined .svc-body{display:contents}
+body.lab-preview .home-refined .svc-body h3{grid-area:title;margin:0;align-self:center}
+body.lab-preview .home-refined .svc-body>p{grid-area:description;font-size:15px;line-height:1.75;margin:0}
+body.lab-preview .home-refined .svc-body>span:last-child{grid-area:action;justify-content:space-between;width:100%;font-size:14px;min-height:44px;padding:0;margin:0}
+body.lab-preview .location-photo figcaption{font-size:12px;line-height:1.5}
+body.lab-preview .location-photo-notice{font-size:13px!important}
+}
+/* R2 readability floor for navigation; source/provisional labels stay visible. */
+body.lab-preview :is(.specialty-breadcrumb,.speech-breadcrumb,.therapies-breadcrumb,.about-breadcrumb){font-size:13px}
+body.lab-preview :is(.preview-centre-link,.contact-map){font-size:14px}
+body.lab-preview .location-photo figcaption{font-size:13px;line-height:1.5}
+body.lab-preview .lab-status,body.lab-preview .lab-utility .lab-email{font-size:13px}
+/* R3: one gutter per container, including tablet navigation. */
+@media(max-width:1023px){
+body.lab-preview .home-refined .svc-rail{padding-inline:0!important}
+body.lab-preview .therapies-directory-layout{display:block}
+body.lab-preview .therapies-guide{position:static;margin-bottom:32px}
+body.lab-preview .therapies-guide ul{display:flex;flex-wrap:wrap;gap:0 22px}
+body.lab-preview .therapies-guide li,body.lab-preview .therapies-guide li:first-child{border:0}
+body.lab-preview .therapies-guide a{border-bottom:1px solid #58595b30;font-size:14px;min-height:44px}
+}
+@media(max-width:700px){
+body.lab-preview .home-refined .svc-card{grid-template-columns:clamp(80px,25vw,104px) minmax(0,1fr);gap:12px 16px}
+body.lab-preview .home-refined .svc-body h3{overflow-wrap:normal;word-break:normal;hyphens:none;font-size:19px}
+}
+@media(max-width:360px){body.lab-preview .home-refined .svc-body h3{font-size:18px}}
+/* R3 tablet composition: avoid a narrow text column beside a short photo. */
+body.lab-preview .layout-learning .specialty-focus-with-photo .specialty-photo img{aspect-ratio:4/3}
+@media(min-width:701px) and (max-width:900px){
+body.lab-preview .specialty-focus-with-photo,body.lab-preview .layout-learning .specialty-focus-with-photo{grid-template-columns:1fr;gap:32px}
+body.lab-preview .specialty-focus-with-photo .specialty-focus-copy{order:0}
+body.lab-preview .specialty-focus-with-photo .specialty-domains{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+body.lab-preview .specialty-focus-with-photo .specialty-photo{position:relative;top:auto;order:2;width:100%;max-width:560px;justify-self:center}
+}
+@media(max-width:700px){body.lab-preview .layout-learning .specialty-focus-with-photo .specialty-photo img{aspect-ratio:3/2}}
+body.lab-preview #mobileMenu>ul{gap:0;padding-inline:var(--lab-gutter)}
+/* User-selected brand accent in the About introduction. */
+body.lab-preview .about-hero h1>span{color:#8DC63F;text-shadow:0 2px 10px rgba(0,0,0,.3)}
+body.lab-preview .about-hero .hero-scrim-b{background:linear-gradient(90deg,rgba(30,33,31,.83) 0%,rgba(30,33,31,.78) 62%,rgba(30,33,31,.25) 82%,rgba(30,33,31,.03) 100%)}
+@media(max-width:700px){body.lab-preview .about-hero .hero-scrim-b{background:linear-gradient(90deg,rgba(30,33,31,.84),rgba(30,33,31,.76) 94%,rgba(30,33,31,.6))}}
+
+/* Keep the two parts of the home motto visually connected. */
+body.lab-preview .home-hero h1{line-height:1.12!important}
+body.lab-preview .home-hero .hero-scrim{background:linear-gradient(90deg,rgba(30,33,31,.85) 0%,rgba(30,33,31,.78) 58%,rgba(30,33,31,.12) 80%,transparent 100%)}
+@media(max-width:700px){body.lab-preview .home-hero .hero-scrim{background:linear-gradient(90deg,rgba(30,33,31,.86),rgba(30,33,31,.76) 94%,rgba(30,33,31,.6))}}
+/* Keep the photo divider behind the overlapping therapy icon and its white ring. */
+body.lab-preview .home-refined .svc-media::after{z-index:1;pointer-events:none}
+body.lab-preview .home-refined .svc-media .svc-icon{z-index:2}
+/* Speech domains share the grey photo panel; the process follows as three open steps. */
+body.lab-preview .speech-area-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:var(--lab-gap);align-items:start}
+body.lab-preview .speech-areas-with-photo{overflow:clip}
+body.lab-preview .speech-areas-with-photo .speech-area-photo{position:sticky;top:calc(var(--hdr,72px) + 28px);align-self:start}
+body.lab-preview .speech-areas-with-photo .speech-area-list li{grid-template-columns:32px minmax(0,1fr);gap:8px 20px;padding:24px 0;border-color:rgba(255,255,255,.3)}
+body.lab-preview .speech-areas-with-photo .speech-area-list li:first-child{padding-top:0;border-top:0}
+body.lab-preview .speech-areas-with-photo .speech-area-number{grid-row:1/3;color:#fff;font-size:21px}
+body.lab-preview .speech-areas-with-photo .speech-area-list h3{grid-column:2;color:#fff;font-size:20px;margin:0}
+body.lab-preview .speech-areas-with-photo .speech-area-list p{grid-column:2;color:#fff;font-size:15px;line-height:1.8;margin:0}
+body.lab-preview .speech-process .speech-practice-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+body.lab-preview .speech-process .speech-practice-points>div{border-color:var(--lab-line);margin-top:0;padding-top:24px}
+@media(max-width:900px){body.lab-preview .speech-area-layout{grid-template-columns:1fr;gap:30px}body.lab-preview .speech-areas-with-photo .speech-area-photo{position:relative;top:auto;max-width:600px;width:100%;justify-self:center}}
+@media(max-width:700px){body.lab-preview .speech-areas-with-photo .speech-area-list li{gap:8px 16px;padding-block:22px}body.lab-preview .speech-process .speech-practice-points{grid-template-columns:1fr;gap:24px}}

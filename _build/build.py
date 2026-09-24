@@ -26,8 +26,8 @@ PAGES = {
                                 'Πώς γίνεται η αξιολόγηση στη ΣΥΝΟΙΔΑ: πρώτη συνάντηση με τον γονέα, γνωριμία με το παιδί, συζήτηση των ευρημάτων και σχεδιασμός της υποστήριξης.', 'rating'),
  'treatments.html':            ('Θεραπείες για παιδιά και εφήβους | ΣΥΝΟΙΔΑ',
                                 'Γνωρίστε τις ειδικές θεραπείες της ΣΥΝΟΙΔΑ για παιδιά και εφήβους στην Ανατολική Αττική. Δείτε τις υπηρεσίες μας και πώς ξεκινά η αξιολόγηση.', 'treatments'),
- 'adult-diagnosis.html':       ('Διάγνωση Ενηλίκων - Σύνοιδα',
-                                'Διάγνωση ενηλίκων στη ΣΥΝΟΙΔΑ: αξιολόγηση για ΔΕΠΥ και αναπτυξιακές διαταραχές σε ενήλικες, με επιστημονική τεκμηρίωση και εξατομικευμένη καθοδήγηση.', 'adult'),
+ 'adult-diagnosis.html':       ('Αξιολόγηση ενηλίκων για ΔΕΠΥ, αυτισμό και νοητική λειτουργία | ΣΥΝΟΙΔΑ',
+                                'Ψυχολογική αξιολόγηση ενηλίκων στη ΣΥΝΟΙΔΑ για ΔΕΠΥ, αυτισμό και νοητική λειτουργία. Ενημερωθείτε για το αντικείμενο και την πρώτη επικοινωνία.', 'adult'),
  'contact-us.html':            ('Επικοινωνία με τη ΣΥΝΟΙΔΑ | Τα κέντρα μας',
                                 'Επικοινωνήστε με τη ΣΥΝΟΙΔΑ σε Αρτέμιδα, Σπάτα, Νέα Μάκρη και Μαραθώνα. Βρείτε το κέντρο σας, καλέστε μας ή στείλτε email.', 'contact'),
  'treatment-speech.html':      ('Λογοθεραπεία για παιδιά και εφήβους | ΣΥΝΟΙΔΑ',
@@ -68,16 +68,11 @@ for outfile, (title, desc, page) in PAGES.items():
     out = out.replace('<!doctype html>', '<!doctype html>\n' + MARKER, 1)
     if outfile == 'index.html':
         # Approved logo particle effect belongs only to the homepage.
-        out = out.replace('</body>', '  <script src="assets/stars-mark.js" defer></script>\n</body>', 1)
+        out = out.replace('</body>', '  <script src="assets/lab-stars-mark.js" defer></script>\n</body>', 1)
     if outfile == 'contact-us.html':
         out = out.replace('</body>', '  <script src="assets/contact.js" defer></script>\n</body>', 1)
-        mobile_phone = re.search(r'<a class="flex items-center gap-1.5 font-bold" href="tel:\+302106633333">[\s\S]*?</a>', out)
-        if not mobile_phone:
-            sys.exit('Contact mobile navigation target not found')
-        mobile_choice = mobile_phone.group().replace('href="tel:+302106633333"', 'href="#contact-centres"').replace('2106633333</a>', 'Επιλέξτε κέντρο</a>')
-        out = out.replace(mobile_phone.group(), mobile_choice, 1)
     # Content versions keep iterative previews fresh without changing images.
-    for asset in ('preview.css', 'stars-mark.js', 'contact.js'):
+    for asset in ('preview.css', 'stars-mark.js', 'contact.js', 'lab-design.css', 'lab-motion.js', 'lab-stars-mark.js', 'review24.css', 'review24-ui.js'):
         with open(os.path.join(ROOT, 'assets', asset), 'rb') as asset_file:
             version = hashlib.sha256(asset_file.read()).hexdigest()[:12]
         out = out.replace('"assets/%s"' % asset, '"assets/%s?v=%s"' % (asset, version))
