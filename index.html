@@ -155,9 +155,10 @@
   </style>
   <link rel="stylesheet" href="assets/lab-design.css?v=8904935924ac" />
   <link rel="stylesheet" href="assets/review24.css?v=81d949d0b41c" />
+  <link rel="stylesheet" href="assets/parent-journey.css?v=b4386396f578" />
 </head>
 
-<body data-page="home" class="font-sans text-ink bg-white antialiased lab-preview review24">
+<body data-page="home" class="font-sans text-ink bg-white antialiased lab-preview review24 parent-journey">
 
   <a href="#main" class="lab-skip sr-only focus:not-sr-only focus:fixed focus:z-[70] focus:top-3 focus:left-3 focus:bg-white focus:text-ink focus:px-4 focus:py-2 focus:rounded-full focus:shadow-card focus:font-semibold">Μετάβαση στο περιεχόμενο</a>
 
@@ -171,8 +172,8 @@
         <nav aria-label="Κύρια πλοήγηση" class="hidden lg:block text-[15px] font-medium text-grey">
           <ul class="flex items-center gap-8">
           <li><a href="index.html" data-nav="home" class="nav-link transition">Αρχική</a></li>
-          <li><a href="about-us.html" data-nav="about" class="nav-link transition">Σχετικά με μας</a></li>
-          <li><a href="rating.html" data-nav="rating" class="nav-link transition">Αξιολόγηση</a></li>
+          <li><a href="about-us.html" data-nav="about" class="nav-link transition">Η ΣΥΝΟΙΔΑ</a></li>
+          <li><a href="rating.html" data-nav="rating" class="nav-link transition">Αξιολόγηση παιδιού</a></li>
           <li class="relative group">
             <a href="treatments.html" data-nav="treatments" aria-haspopup="true" aria-expanded="false" aria-controls="therapiesDropdown" class="nav-link inline-flex items-center gap-1 py-2 transition">Θεραπείες
               <svg class="w-4 h-4 mt-0.5 transition-transform group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
@@ -203,8 +204,8 @@
     <nav id="mobileMenu" aria-label="Πλοήγηση κινητού" class="lg:hidden hidden border-t border-grey/10 bg-white">
       <ul class="max-w-6xl mx-auto px-4 py-3 flex flex-col text-[16px] font-medium text-grey">
         <li><a href="index.html" data-nav="home" class="block py-3 border-b border-grey/10">Αρχική</a></li>
-        <li><a href="about-us.html" data-nav="about" class="block py-3 border-b border-grey/10">Σχετικά με μας</a></li>
-        <li><a href="rating.html" data-nav="rating" class="block py-3 border-b border-grey/10">Αξιολόγηση</a></li>
+        <li><a href="about-us.html" data-nav="about" class="block py-3 border-b border-grey/10">Η ΣΥΝΟΙΔΑ</a></li>
+        <li><a href="rating.html" data-nav="rating" class="block py-3 border-b border-grey/10">Αξιολόγηση παιδιού</a></li>
         <li class="border-b border-grey/10">
           <button id="mTherapiesBtn" type="button" class="w-full flex items-center justify-between py-3" aria-expanded="false" aria-controls="mTherapiesSub"><span data-nav="treatments">Θεραπείες</span>
             <svg id="mTherapiesChevron" class="w-5 h-5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
@@ -226,62 +227,103 @@
     </nav>
   </header>
 
-<main id="main" class="home-refined">
-  <!-- PHOTO HERO -->
-  <section class="relative hero-depth home-hero">
+<main id="main" class="home-refined parent-home">
+<section class="relative hero-depth home-hero">
     <div class="relative min-h-[560px] lg:min-h-[640px] flex items-center overflow-hidden">
       <div class="hero-planes"><div class="hero-plane"><img fetchpriority="high" src="assets/hero-room-bg.jpg" alt="Φωτεινός χώρος θεραπείας για παιδιά στη ΣΥΝΟΙΔΑ" /></div><div class="hero-fg" aria-hidden="true"><img fetchpriority="high" src="assets/hero-room-fg.webp" alt="" /></div></div>
       <div class="absolute inset-0 hero-scrim"></div>
       <div class="reveal relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-24 pt-12">
         <div class="max-w-2xl">
 
-          <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.1]">Όταν το παιδί εξελίσσεται, <span class="block text-green text-[0.8em] leading-[1.15] mt-1.5">ο κόσμος αλλάζει προς το καλύτερο.</span></h1>
+          <h1>Αξιολόγηση και θεραπείες<br><span>για παιδιά και εφήβους</span></h1>
+          <p class="parent-hero-note">Η πρώτη συνάντηση γίνεται μόνο με τον γονέα.</p>
           <p class="mt-5 text-white/90 text-[15px] sm:text-lg lg:text-xl whitespace-nowrap">Αρτέμιδα · Σπάτα · Νέα Μάκρη · Μαραθώνας</p>
         </div>
         <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a href="#preview-centres" class="inline-flex items-center gap-2 rounded-full border border-white/50 text-white px-7 py-3.5 font-semibold hover:bg-white/10 transition">Μιλήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#preview-first-steps" class="preview-hero-secondary">Πώς ξεκινάμε</a>
+          <a href="rating.html" class="inline-flex items-center gap-2 rounded-full border border-white/50 text-white px-7 py-3.5 font-semibold hover:bg-white/10 transition">Η πρώτη αξιολόγηση <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#home-services" class="preview-hero-secondary">Δείτε τις υπηρεσίες</a>
         </div>
       </div>
     </div>
   </section>
-
-  <nav class="review-routes" aria-label="Γρήγορη πρόσβαση"><div class="review-wrap"><a href="rating.html"><span>Πρώτη συνάντηση</span><span aria-hidden="true">↗</span></a><a href="treatments.html"><span>Θεραπείες</span><span aria-hidden="true">↗</span></a><a href="#preview-centres"><span>Βρείτε το κέντρο σας</span><span aria-hidden="true">↗</span></a></div></nav>
-
-  <!-- VALUE PROPS -->
-  <section class="bg-white home-values">
-    <div class="home-values-wrap">
-      <div class="home-values-grid">
-        <div class="reveal home-value">
-          <img loading="lazy" decoding="async" src="assets/vp-companion.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
-          <div class="preview-value-copy"><h2>Ακούμε την οικογένεια</h2><p>Οι παρατηρήσεις και οι ανησυχίες σας μάς βοηθούν να γνωρίσουμε καλύτερα το παιδί.</p></div>
-        </div>
-        <div class="reveal home-value d1">
-          <img loading="lazy" decoding="async" src="assets/vp-team.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
-          <div class="preview-value-copy"><h2>Συνεργαζόμαστε ως ομάδα</h2><p>Οι ειδικότητες συνδυάζουν τη γνώση τους γύρω από τις ανάγκες του παιδιού.</p></div>
-        </div>
-        <div class="reveal home-value d2">
-          <img loading="lazy" decoding="async" src="assets/vp-innovation.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
-          <div class="preview-value-copy"><h2>Προσαρμόζουμε τη δουλειά μας</h2><p>Επιλέγουμε δραστηριότητες που ταιριάζουν στις δυνατότητες και τα ενδιαφέροντα του παιδιού.</p></div>
-        </div>
-        <div class="reveal home-value">
-          <img loading="lazy" decoding="async" src="assets/vp-certification.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
-          <div class="preview-value-copy"><h2>Ξεκινάμε από την αξιολόγηση</h2><p>Διερευνούμε τις ανάγκες του παιδιού πριν προτείνουμε πρόγραμμα υποστήριξης.</p></div>
-        </div>
-        <div class="reveal home-value d1">
-          <img loading="lazy" decoding="async" src="assets/vp-empathy.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
-          <div class="preview-value-copy"><h2>Σεβόμαστε τον ρυθμό του παιδιού</h2><p>Γνωρίζουμε το παιδί και δίνουμε χώρο σε όσα το διευκολύνουν να συμμετέχει.</p></div>
-        </div>
-        <div class="reveal home-value d2">
-          <img loading="lazy" decoding="async" src="assets/vp-goals.png" alt="" class="w-20 h-20 shrink-0 object-contain" />
-          <div class="preview-value-copy"><h2>Στόχοι για την καθημερινότητα</h2><p>Σχεδιάζουμε την υποστήριξη με βάση όσα χρειάζεται στο σπίτι, στο σχολείο και στο παιχνίδι.</p></div>
-        </div>
+<section id="preview-first-steps" class="parent-start parent-section"><div class="parent-wrap parent-start-layout"><div class="reveal"><h2>Από πού να ξεκινήσετε</h2><p>Δεν χρειάζεται να γνωρίζετε ποια ειδικότητα αφορά τη δυσκολία του παιδιού. Μπορείτε να ξεκινήσετε περιγράφοντας όσα παρατηρείτε.</p></div><nav class="parent-route-list" aria-label="Βρείτε την πληροφορία που χρειάζεστε"><a href="rating.html"><span><strong>Με απασχολεί κάτι στην ανάπτυξη του παιδιού</strong><span>Ποιος έρχεται στην πρώτη συνάντηση και τι περιλαμβάνει η αξιολόγηση.</span></span><span aria-hidden="true">↗</span></a><a href="#home-services"><span><strong>Θέλω να καταλάβω τις υπηρεσίες</strong><span>Το αντικείμενο κάθε ειδικότητας, με παραδείγματα από την καθημερινότητα.</span></span><span aria-hidden="true">↓</span></a><a href="#preview-centres"><span><strong>Θέλω να επικοινωνήσω με ένα κέντρο</strong><span>Διευθύνσεις, τηλέφωνα και οδηγίες πρόσβασης.</span></span><span aria-hidden="true">↓</span></a></nav></div></section>
+<section id="home-services" class="parent-services bg-white home-services">
+    <div class="parent-services-stage py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal svc-intro"><h2>Τι κάνει κάθε υπηρεσία</h2><p>Δείτε το αντικείμενο κάθε υπηρεσίας. Η επιλογή της κατάλληλης υποστήριξης γίνεται μετά την αξιολόγηση.</p></div>
+      <div class="parent-services-grid mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="treatment-speech.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/speech-detail.jpg" alt="Χώρος λογοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-green text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.9A8.4 8.4 0 1 1 21 11.5Z"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Λογοθεραπεία</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Κατανόηση και έκφραση του λόγου, καθαρότητα και ροή της ομιλίας, χρήση της επικοινωνίας στον διάλογο και στο παιχνίδι.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για τη λογοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a href="treatment-occupational.html" class="svc-card reveal d1 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/occupational-detail.jpg" alt="Αίθουσα εργοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-red text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0M14 10V4a2 2 0 0 0-4 0v2M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Εργοθεραπεία</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Συμμετοχή στο ντύσιμο, στο φαγητό, στο παιχνίδι και στις σχολικές δραστηριότητες. Διερεύνηση των κινητικών και αισθητηριακών δυσκολιών που την επηρεάζουν.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την εργοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a href="treatment-special.html" class="svc-card reveal d2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/special-detail.jpg" alt="Αίθουσα ειδικής αγωγής" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-blue text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4Z"/><path d="M6 9v5c0 1.5 3 3 6 3s6-1.5 6-3V9"/><path d="M22 7v6"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ειδική Αγωγή</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Ανάγνωση, κατανόηση κειμένου, γραπτός λόγος, μαθηματικά και οργάνωση μελέτης. Η διδασκαλία προσαρμόζεται στον τρόπο που μαθαίνει το παιδί.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την ειδική αγωγή <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a href="treatment-psychotherapy.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/psychotherapy-detail.jpg" alt="Γραφείο ψυχοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-orange text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ψυχοθεραπεία</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Επεξεργασία συναισθηματικών δυσκολιών, άγχους και ζητημάτων στις σχέσεις που επηρεάζουν την καθημερινότητα του παιδιού ή του εφήβου.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την ψυχοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a href="treatment-consulting.html" class="svc-card reveal d1 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/consulting-detail.jpg" alt="Χώρος συμβουλευτικής" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-grey text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.9A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 10h8M8 13.5h5"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Συμβουλευτική γονέων</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Συνεργασία με τον γονέα για την επικοινωνία, τα όρια και την ανταπόκριση σε δύσκολες καταστάσεις στο σπίτι.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για τη συμβουλευτική γονέων <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a href="treatment-social.html" class="svc-card reveal d2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/social-detail.jpg" alt="Αίθουσα ομάδων κοινωνικών δεξιοτήτων" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-green text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/><path d="M16.5 14a4 4 0 0 1 4 4v2"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ομάδες κοινωνικών δεξιοτήτων</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Εξάσκηση στην επικοινωνία, στη συνεργασία και στην αυτονομία μέσα από κοινές δραστηριότητες. Εξετάζεται αν η συγκεκριμένη ομάδα ταιριάζει στο παιδί.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για τις ομάδες <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a href="treatment-play.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
+          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/play-hero.jpg" alt="Χώρος παιγνιοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-orange text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span></span>
+          <div class="svc-body">
+                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Παιγνιοθεραπεία</h3>
+          <p class="text-ink/85 leading-relaxed text-[15px]">Ψυχοθεραπευτική προσέγγιση που χρησιμοποιεί το παιχνίδι για την έκφραση και την επεξεργασία συναισθημάτων και εμπειριών.</p>
+          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την παιγνιοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
       </div>
     </div>
+    </div>
   </section>
-
-  <!-- ABOUT TEASER -->
-  <section class="py-16 lg:py-24 bg-mist home-about">
+<section id="logo-reveal" class="relative bg-mist overflow-hidden logo-story">
+    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
+    <div class="cta-mark" aria-hidden="true"><span class="orb orb-g"></span><span class="orb orb-r"></span><span class="orb orb-b"></span><span class="orb orb-o"></span><img src="assets/logo-stacked-light.png" alt="" width="420" height="279" loading="lazy" decoding="async" /></div>
+    <div class="reveal logo-story-copy">
+      <h2>Δεν είστε βέβαιοι ποια υποστήριξη χρειάζεται;</h2>
+      <p class="mt-4 text-[17px] text-ink/85">Στην πρώτη συνάντηση συζητάμε με τον γονέα το αίτημα και το ιστορικό του παιδιού. Έπειτα οργανώνεται η αξιολόγηση, ώστε η πρόταση να βασίζεται σε συγκεκριμένα ευρήματα.</p>
+      <div class="mt-8"><a href="rating.html" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Πώς γίνεται η αξιολόγηση <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <p class="mt-5"><a href="contact-us.html#contact-centres" class="inline-flex items-center gap-2 text-grey font-semibold hover:text-green transition">Βρείτε τηλέφωνο κέντρου <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </section>
+<section id="parent-questions" class="parent-section parent-home-faq"><div class="parent-wrap parent-faq-layout"><div class="reveal"><h2>Πριν επικοινωνήσετε</h2><p>Απαντήσεις σε βασικές απορίες για την έναρξη της συνεργασίας.</p><a class="parent-text-link" href="rating.html">Η διαδικασία αξιολόγησης <span aria-hidden="true">↗</span></a></div><div class="parent-faq"><details><summary><img src="assets/vp-companion.png" alt="" width="32" height="32" loading="lazy"><span>Χρειάζεται να έχω επιλέξει ειδικότητα;</span><span class="parent-plus" aria-hidden="true">+</span></summary><p>Όχι. Περιγράψτε μας τι σας απασχολεί. Η αξιολόγηση βοηθά να διευκρινιστεί ποιοι τομείς χρειάζονται διερεύνηση και αν χρειάζεται υποστήριξη.</p></details><details><summary><img src="assets/vp-certification.png" alt="" width="32" height="32" loading="lazy"><span>Η αξιολόγηση σημαίνει ότι θα ξεκινήσουν θεραπείες;</span><span class="parent-plus" aria-hidden="true">+</span></summary><p>Η αξιολόγηση και η θεραπευτική παρέμβαση είναι διαφορετικά βήματα. Συζητάμε τα ευρήματα και, εφόσον προταθεί πρόγραμμα, εξηγούμε τους στόχους και την οργάνωσή του.</p></details><details><summary><img src="assets/vp-team.png" alt="" width="32" height="32" loading="lazy"><span>Τι γίνεται αν εμπλέκονται περισσότερες ειδικότητες;</span><span class="parent-plus" aria-hidden="true">+</span></summary><p>Όταν οι ανάγκες αφορούν περισσότερους τομείς, οι θεραπευτές συντονίζουν τους στόχους τους. Η συμμετοχή μιας ειδικότητας συνδέεται με συγκεκριμένες ανάγκες και δεν θεωρείται δεδομένη για κάθε παιδί.</p></details><details><summary><img src="assets/vp-goals.png" alt="" width="32" height="32" loading="lazy"><span>Πώς καθορίζονται η συχνότητα και η διάρκεια;</span><span class="parent-plus" aria-hidden="true">+</span></summary><p>Δεν υπάρχει ίδιο πρόγραμμα για όλα τα παιδιά. Η πρόταση εξαρτάται από τα ευρήματα, τους στόχους και την πορεία της παρέμβασης. Οι πρακτικές λεπτομέρειες συζητούνται πριν από την έναρξη.</p></details><details><summary><img src="assets/vp-empathy.png" alt="" width="32" height="32" loading="lazy"><span>Μπορώ να ζητήσω βοήθεια και για τη δική μου στάση ως γονέας;</span><span class="parent-plus" aria-hidden="true">+</span></summary><p>Η συμβουλευτική γονέων αφορά την επικοινωνία με το παιδί, τα όρια και τη διαχείριση δύσκολων καταστάσεων στην οικογένεια. Μπορείτε να θέσετε αυτά τα ερωτήματα στην πρώτη επικοινωνία.</p></details><details><summary><img src="assets/vp-innovation.png" alt="" width="32" height="32" loading="lazy"><span>Πώς μαθαίνω το κόστος και τη διαθεσιμότητα;</span><span class="parent-plus" aria-hidden="true">+</span></summary><p>Επικοινωνήστε με το κέντρο που σας εξυπηρετεί για ενημέρωση σχετικά με την υπηρεσία που σας ενδιαφέρει, το κόστος και τα διαθέσιμα ραντεβού.</p></details></div></div></section>
+<section class="py-16 lg:py-24 bg-mist home-about">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1.4fr_1fr] gap-12 lg:gap-16 items-center">
       <div class="reveal relative">
         <div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-green/10"></div>
@@ -292,139 +334,18 @@
 
         <p class="preview-centre-count"><span data-count="29">29</span> χρόνια…</p>
         <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">δίπλα στο παιδί <span class="text-green">και στην οικογένεια.</span></h2>
-        <div class="prose-syn mt-5 text-[16px] text-ink/85">
-          <p>Κάθε παιδί έχει τις δικές του δυνατότητες, ενδιαφέροντα και δυσκολίες. Στη ΣΥΝΟΙΔΑ, γνωρίζουμε το παιδί, συζητάμε μαζί σας και σχεδιάζουμε την υποστήριξη που ανταποκρίνεται στις ανάγκες του.</p>
-        </div>
-        <p class="mt-6 font-display font-bold text-ink text-lg">Σύνοιδα σημαίνει:</p>
-        <ul class="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-3">
-          <li class="flex items-start gap-3 text-ink/85">
-            <svg class="w-5 h-5 shrink-0 mt-0.5 text-green" viewBox="0 0 24 24" fill="currentColor"><path d="M20.285 6.708a1 1 0 0 0-1.414-1.416l-9.19 9.19-4.552-4.55a1 1 0 0 0-1.414 1.414l5.26 5.258a1 1 0 0 0 1.414 0z"/></svg>
-            <span>συνειδητοποιώ τις ανάγκες του παιδιού.</span>
-          </li>
-          <li class="flex items-start gap-3 text-ink/85">
-            <svg class="w-5 h-5 shrink-0 mt-0.5 text-green" viewBox="0 0 24 24" fill="currentColor"><path d="M20.285 6.708a1 1 0 0 0-1.414-1.416l-9.19 9.19-4.552-4.55a1 1 0 0 0-1.414 1.414l5.26 5.258a1 1 0 0 0 1.414 0z"/></svg>
-            <span>συναισθάνομαι τις ανησυχίες των γονέων.</span>
-          </li>
-          <li class="flex items-start gap-3 text-ink/85">
-            <svg class="w-5 h-5 shrink-0 mt-0.5 text-green" viewBox="0 0 24 24" fill="currentColor"><path d="M20.285 6.708a1 1 0 0 0-1.414-1.416l-9.19 9.19-4.552-4.55a1 1 0 0 0-1.414 1.414l5.26 5.258a1 1 0 0 0 1.414 0z"/></svg>
-            <span>συμπορεύομαι με την οικογένεια σε κάθε βήμα της εξέλιξης.</span>
-          </li>
-          <li class="flex items-start gap-3 text-ink/85">
-            <svg class="w-5 h-5 shrink-0 mt-0.5 text-green" viewBox="0 0 24 24" fill="currentColor"><path d="M20.285 6.708a1 1 0 0 0-1.414-1.416l-9.19 9.19-4.552-4.55a1 1 0 0 0-1.414 1.414l5.26 5.258a1 1 0 0 0 1.414 0z"/></svg>
-            <span>συνεργάζομαι με όλους όσους φροντίζουν το παιδί.</span>
-          </li>
-        </ul>
+        <div class="prose-syn parent-proof-copy"><p>Τέσσερα κέντρα στην Ανατολική Αττική, με λογοθεραπεία, εργοθεραπεία, μαθησιακή και ψυχολογική υποστήριξη.</p><p>Γνωρίστε την ιστορία της ΣΥΝΟΙΔΑ, τον τρόπο συντονισμού της ομάδας και τη συνεργασία με τους γονείς.</p></div>
         <div class="mt-8">
           <a href="about-us.html" class="inline-flex items-center gap-2 rounded-full bg-grey px-7 py-3.5 text-white font-semibold shadow-soft hover:bg-grey/90 transition">Γνωρίστε τη ΣΥΝΟΙΔΑ <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="preview-section preview-question home-question">
-    <div class="preview-container reveal">
-      <h2>Σας προβληματίζει κάτι <span>στην καθημερινότητα του παιδιού σας;</span></h2>
-      <div class="preview-question-body"><p>Δείτε τους βασικούς τομείς υποστήριξης ή περιγράψτε μας όσα παρατηρείτε, για να συζητήσουμε από πού μπορείτε να ξεκινήσετε.</p><nav class="review-concern-links" aria-label="Τομείς υποστήριξης"><a href="treatment-speech.html">Λόγος και επικοινωνία <span aria-hidden="true">↗</span></a><a href="treatment-occupational.html">Αυτονομία και παιχνίδι <span aria-hidden="true">↗</span></a><a href="treatment-special.html">Μάθηση και μελέτη <span aria-hidden="true">↗</span></a><a href="treatment-psychotherapy.html">Συναισθήματα και σχέσεις <span aria-hidden="true">↗</span></a></nav><a class="preview-button" href="#preview-centres">Συζητήστε μαζί μας <span aria-hidden="true">→</span></a></div>
-    </div>
-  </section>
-
-  <!-- SERVICES PREVIEW -->
-  <section class="svc-pin bg-white home-services">
-    <div class="svc-stage py-16 lg:py-24">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal svc-intro">
-
-        <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Οι θεραπείες <span class="text-green">στη ΣΥΝΟΙΔΑ</span></h2>
-        <p class="mt-5 text-[16px] text-ink/85">Η αξιολόγηση μάς βοηθά να κατανοήσουμε τι χρειάζεται το παιδί και να σας προτείνουμε το κατάλληλο πρόγραμμα. Όταν χρειάζεται, οι ειδικότητες συνεργάζονται σε ένα κοινό πλάνο.</p>
-      </div>
-      <div class="svc-rail mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a href="treatment-speech.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/speech-detail.jpg" alt="Χώρος λογοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-green text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.9A8.4 8.4 0 1 1 21 11.5Z"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Λογοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Για παιδιά που δυσκολεύονται να μιλήσουν καθαρά, να κατανοήσουν ή να εκφράσουν όσα θέλουν. Δουλεύουμε την επικοινωνία μέσα από δραστηριότητες που ταιριάζουν στις ανάγκες τους.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για τη λογοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-occupational.html" class="svc-card reveal d1 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/occupational-detail.jpg" alt="Αίθουσα εργοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-red text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0M14 10V4a2 2 0 0 0-4 0v2M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Εργοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Υποστηρίζουμε το παιδί στο παιχνίδι, στο ντύσιμο, στο φαγητό και στις δραστηριότητες του σχολείου. Στόχος είναι να συμμετέχει με περισσότερη αυτονομία στην καθημερινότητά του.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την εργοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-special.html" class="svc-card reveal d2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/special-detail.jpg" alt="Αίθουσα ειδικής αγωγής" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-blue text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7l10-4 10 4-10 4Z"/><path d="M6 9v5c0 1.5 3 3 6 3s6-1.5 6-3V9"/><path d="M22 7v6"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ειδική Αγωγή</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Δουλεύουμε την ανάγνωση, τη γραφή, τα μαθηματικά και την οργάνωση της σκέψης, με τρόπους που ταιριάζουν στο πώς μαθαίνει το παιδί.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την ειδική αγωγή <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-psychotherapy.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/psychotherapy-detail.jpg" alt="Γραφείο ψυχοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-orange text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ψυχοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Ένας χώρος για να εκφράσει το παιδί ή ο έφηβος όσα νιώθει. Δουλεύουμε πάνω στις δυσκολίες που επηρεάζουν την καθημερινότητα και τις σχέσεις του.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την ψυχοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-consulting.html" class="svc-card reveal d1 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/consulting-detail.jpg" alt="Χώρος συμβουλευτικής" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-grey text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.1-3.9A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 10h8M8 13.5h5"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Συμβουλευτική γονέων</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Συζητάμε όσα σας δυσκολεύουν στο σπίτι και αναζητούμε μαζί πρακτικούς τρόπους υποστήριξης του παιδιού, με σεβασμό στις ανάγκες της οικογένειάς σας.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για τη συμβουλευτική γονέων <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-social.html" class="svc-card reveal d2 block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/social-detail.jpg" alt="Αίθουσα ομάδων κοινωνικών δεξιοτήτων" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-green text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/><path d="M16.5 14a4 4 0 0 1 4 4v2"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Ομάδες κοινωνικών δεξιοτήτων</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Μέσα από παιχνίδια και κοινές δραστηριότητες, τα παιδιά εξασκούν την επικοινωνία, τη συνεργασία και τη διαχείριση καθημερινών κοινωνικών καταστάσεων.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για τις ομάδες <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-        <a href="treatment-play.html" class="svc-card reveal block rounded-3xl bg-white ring-1 ring-grey/10 shadow-card">
-          <span class="svc-media"><img loading="lazy" decoding="async" src="assets/play-hero.jpg" alt="Χώρος παιγνιοθεραπείας" /><span class="svc-icon grid place-items-center w-14 h-14 rounded-full bg-orange text-white"><svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span></span>
-          <div class="svc-body">
-                    <h3 class="font-display font-bold text-ink text-xl mb-2.5">Παιγνιοθεραπεία</h3>
-          <p class="text-ink/85 leading-relaxed text-[15px]">Μέσα από το παιχνίδι, το παιδί βρίσκει τρόπους να εκφράσει και να επεξεργαστεί συναισθήματα και εμπειρίες, με την υποστήριξη εκπαιδευμένου θεραπευτή.</p>
-          <span class="mt-5 inline-flex items-center gap-2 text-grey font-semibold text-sm">Περισσότερα για την παιγνιοθεραπεία <svg class="arrow w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <section id="logo-reveal" class="relative bg-mist overflow-hidden logo-story">
-    <div class="pointer-events-none absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-blue/10 blur-2xl"></div>
-    <div class="cta-mark" aria-hidden="true"><span class="orb orb-g"></span><span class="orb orb-r"></span><span class="orb orb-b"></span><span class="orb orb-o"></span><img src="assets/logo-stacked-light.png" alt="" width="420" height="279" loading="lazy" decoding="async" /></div>
-    <div class="reveal logo-story-copy">
-      <h2 class="font-display font-bold text-ink text-3xl sm:text-4xl leading-tight">Ας συζητήσουμε <span class="text-green">όσα σας απασχολούν</span></h2>
-      <p class="mt-4 text-[17px] text-ink/85">Είμαστε εδώ για να σας ακούσουμε και να σας εξηγήσουμε πώς μπορούμε να βοηθήσουμε το παιδί και την οικογένειά σας.</p>
-      <div class="mt-8"><a href="#preview-centres" class="inline-flex items-center gap-2 rounded-full bg-green px-8 py-4 text-grey text-lg font-bold shadow-soft hover:bg-[#7CB22E] transition">Μιλήστε μαζί μας <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      <p class="mt-5"><a href="about-us.html#pos-xekiname" class="inline-flex items-center gap-2 text-grey font-semibold hover:text-green transition">Δείτε πώς ξεκινάμε <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
-    </div>
-  </section>
-
-  <section id="preview-first-steps" class="preview-section">
-    <div class="preview-container"><div class="reveal preview-section-title"><h2>Πώς ξεκινάμε</h2></div>
-      <ol class="preview-steps"><li class="reveal"><span class="preview-step-number">01</span><h3>Συζητάμε μαζί σας</h3><p>Η πρώτη συνάντηση γίνεται μόνο με τον γονέα. Συζητάμε το αίτημά σας, το ιστορικό και τα επόμενα βήματα.</p></li><li class="reveal"><span class="preview-step-number">02</span><h3>Γνωρίζουμε το παιδί</h3><p>Μέσα από την αξιολόγηση, διερευνούμε τις δυνατότητες και τις ανάγκες του.</p></li><li class="reveal"><span class="preview-step-number">03</span><h3>Σχεδιάζουμε την υποστήριξη</h3><p>Συζητάμε μαζί σας τα ευρήματα και προτείνουμε στόχους και πρόγραμμα που ταιριάζουν στο παιδί.</p></li></ol>
-      <p class="reveal preview-section-link"><a class="preview-button" href="about-us.html#pos-xekiname">Δείτε αναλυτικά την πρώτη συνάντηση <span aria-hidden="true">→</span></a></p>
-    </div>
-  </section>
-
-  <section id="preview-centres" class="preview-section preview-centres-section">
+<section id="preview-centres" class="preview-section preview-centres-section">
     <div class="preview-container"><div class="reveal preview-section-title"><h2>Βρείτε το κέντρο που σας εξυπηρετεί</h2><p>Θα μας βρείτε στην Αρτέμιδα, στα Σπάτα, στη Νέα Μάκρη και στον Μαραθώνα. Επιλέξτε το κέντρο που σας εξυπηρετεί για να δείτε τα στοιχεία επικοινωνίας και τις οδηγίες πρόσβασης.</p></div>
       <p class="location-photo-notice">Οι εικόνες είναι προσωρινά δείγματα για τη διάταξη. Η αντιστοίχιση με κάθε κέντρο θα οριστικοποιηθεί.</p><div class="preview-centres location-photos"><article class="reveal preview-centre"><figure class="location-photo"><img src="assets/about-history.jpg" width="1500" height="1000" loading="lazy" decoding="async" alt="Ενδεικτική εξωτερική φωτογραφία ΣΥΝΟΙΔΑ για τη δοκιμή της διάταξης" /><figcaption>Προσωρινή αντιστοίχιση</figcaption></figure><h3><a href="contact-us.html#centre-artemida">Αρτέμιδα</a></h3><p>7η Στάση Βραυρώνος</p><a class="preview-phone" href="tel:+302294049981">2294049981</a><a class="preview-centre-link" href="contact-us.html#centre-artemida">Στοιχεία και πρόσβαση <span aria-hidden="true">→</span></a></article><article class="reveal preview-centre"><figure class="location-photo"><img src="assets/about-storefront.jpg" width="1500" height="1000" loading="lazy" decoding="async" alt="Ενδεικτική εξωτερική φωτογραφία ΣΥΝΟΙΔΑ για τη δοκιμή της διάταξης" /><figcaption>Προσωρινή αντιστοίχιση</figcaption></figure><h3><a href="contact-us.html#centre-spata">Σπάτα</a></h3><p>Στρατηγού Πλαστήρα 1 &amp; Χ. Μπέκα</p><a class="preview-phone" href="tel:+302106633333">2106633333</a><a class="preview-centre-link" href="contact-us.html#centre-spata">Στοιχεία και πρόσβαση <span aria-hidden="true">→</span></a></article><article class="reveal preview-centre"><figure class="location-photo"><img src="assets/contact-hero.jpg" width="1500" height="1000" loading="lazy" decoding="async" alt="Ενδεικτική εξωτερική φωτογραφία ΣΥΝΟΙΔΑ για τη δοκιμή της διάταξης" /><figcaption>Προσωρινή αντιστοίχιση</figcaption></figure><h3><a href="contact-us.html#centre-nea-makri">Νέα Μάκρη</a></h3><p>Αγίας Παρασκευής 8</p><a class="preview-phone" href="tel:+302294700956">2294700956</a><a class="preview-centre-link" href="contact-us.html#centre-nea-makri">Στοιχεία και πρόσβαση <span aria-hidden="true">→</span></a></article><article class="reveal preview-centre"><figure class="location-photo"><img src="assets/marathonas-exterior-concept-v1.png" width="1536" height="1024" loading="lazy" decoding="async" alt="Συνθετικό προσχέδιο πρόσοψης για την οπτική δοκιμή του Μαραθώνα" /><figcaption>Εικόνα AI · οπτικό προσχέδιο</figcaption></figure><h3><a href="contact-us.html#centre-marathonas">Μαραθώνας</a></h3><p>Σπηλαίου Πανός 10</p><a class="preview-phone" href="tel:+306945454203">6945454203</a><a class="preview-centre-link" href="contact-us.html#centre-marathonas">Στοιχεία και πρόσβαση <span aria-hidden="true">→</span></a></article></div>
     </div>
   </section>
-
-
 </main>
 
   <!-- ============ FOOTER ============ -->
@@ -433,7 +354,7 @@
       <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1.4fr]">
         <div>
           <img src="assets/logo-stacked-light.png" alt="Σύνοιδα — Κέντρα Ειδικών Θεραπειών" width="420" height="279" loading="lazy" decoding="async" class="h-28 w-auto" />
-          <p class="mt-5 text-white/80 leading-relaxed max-w-xs">Όταν το παιδί εξελίσσεται, ο κόσμος αλλάζει προς το καλύτερο.</p>
+          <p class="mt-5 text-white/80 leading-relaxed max-w-xs">Κέντρα ειδικών θεραπειών για παιδιά και εφήβους.</p>
           <a href="https://www.facebook.com/www.synoida.gr/" target="_blank" rel="noopener" aria-label="Facebook (ανοίγει σε νέα καρτέλα)" class="mt-6 inline-grid place-items-center w-10 h-10 rounded-full bg-white text-grey hover:bg-blue hover:text-white transition"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.2c0-.8.3-1.4 1.5-1.4H17V.2C16.6.1 15.6 0 14.5 0 12 0 10.4 1.5 10.4 4v2H7.5v3h2.9v9H14V9Z"/></svg></a>
         </div>
         <div>

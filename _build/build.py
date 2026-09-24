@@ -20,8 +20,8 @@ MARKER = ('<!-- ΠΑΡΑΓΕΤΑΙ ΑΥΤΟΜΑΤΑ από _build/build.py — �
 PAGES = {
  'index.html':                 ('ΣΥΝΟΙΔΑ | Κέντρα Ειδικών Θεραπειών στην Ανατολική Αττική',
                                 'Λογοθεραπεία, εργοθεραπεία και ειδικές θεραπείες για παιδιά και εφήβους σε Αρτέμιδα, Σπάτα, Νέα Μάκρη και Μαραθώνα. Γνωρίστε τη ΣΥΝΟΙΔΑ και πώς ξεκινάμε.', 'home'),
- 'about-us.html':              ('Η ιστορία και η ομάδα μας | ΣΥΝΟΙΔΑ',
-                                'Γνωρίστε τη ΣΥΝΟΙΔΑ: από το 1998, τέσσερα κέντρα ειδικών θεραπειών στην Ανατολική Αττική. Η ιστορία, η ομάδα και ο τρόπος συνεργασίας με την οικογένεια.', 'about'),
+ 'about-us.html':              ('Η ΣΥΝΟΙΔΑ και η συνεργασία με την οικογένεια',
+                                'Γνωρίστε πώς συνεργάζεται η θεραπευτική ομάδα της ΣΥΝΟΙΔΑ με τους γονείς. Ο συντονισμός, η ενημέρωση και η ιστορία των τεσσάρων κέντρων μας.', 'about'),
  'rating.html':                ('Αξιολόγηση παιδιού | Πρώτα βήματα στη ΣΥΝΟΙΔΑ',
                                 'Πώς γίνεται η αξιολόγηση στη ΣΥΝΟΙΔΑ: πρώτη συνάντηση με τον γονέα, γνωριμία με το παιδί, συζήτηση των ευρημάτων και σχεδιασμός της υποστήριξης.', 'rating'),
  'treatments.html':            ('Θεραπείες για παιδιά και εφήβους | ΣΥΝΟΙΔΑ',
@@ -72,7 +72,7 @@ for outfile, (title, desc, page) in PAGES.items():
     if outfile == 'contact-us.html':
         out = out.replace('</body>', '  <script src="assets/contact.js" defer></script>\n</body>', 1)
     # Content versions keep iterative previews fresh without changing images.
-    for asset in ('preview.css', 'stars-mark.js', 'contact.js', 'lab-design.css', 'lab-motion.js', 'lab-stars-mark.js', 'review24.css', 'review24-ui.js'):
+    for asset in ('preview.css', 'stars-mark.js', 'contact.js', 'lab-design.css', 'lab-motion.js', 'lab-stars-mark.js', 'review24.css', 'review24-ui.js', 'parent-journey.css'):
         with open(os.path.join(ROOT, 'assets', asset), 'rb') as asset_file:
             version = hashlib.sha256(asset_file.read()).hexdigest()[:12]
         out = out.replace('"assets/%s"' % asset, '"assets/%s?v=%s"' % (asset, version))
